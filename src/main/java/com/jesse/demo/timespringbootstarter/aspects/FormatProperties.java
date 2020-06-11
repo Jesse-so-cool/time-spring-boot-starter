@@ -1,8 +1,9 @@
 package com.jesse.demo.timespringbootstarter.aspects;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 @ConfigurationProperties(prefix = "starter.time")
 public class FormatProperties {
     private String format = "yyyy-MM-dd hh:mm:ss";

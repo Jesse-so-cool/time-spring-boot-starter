@@ -17,9 +17,7 @@ public class TimeAspect {
     @Autowired
     private FormatProperties formatProperties;
 
-
-
-    @Pointcut("@annotation(com.jesse.demo.timespringbootstarter.annotation.Time)")
+    @Pointcut("@within(com.jesse.demo.timespringbootstarter.annotation.Time)||@annotation(com.jesse.demo.timespringbootstarter.annotation.Time)")
     public void point() {
     }
 
